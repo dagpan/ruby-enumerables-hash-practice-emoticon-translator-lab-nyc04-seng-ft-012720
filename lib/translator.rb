@@ -12,7 +12,7 @@ def load_library(file_path = "./lib/emoticons.yml")
   result_hash = {"get_meaning" => {}, "get_emoticon" => {}}
   emoticons.each do |key, value|
 
-# the keys inside the 'get_meaning' hash are the Japanese emoticons
+# the keys inside the 'get_meaning' hash are the Japanese emoticons and point to their meanings
 
      result_hash["get_meaning"][value[1]] = key
      result_hash["get_emoticon"][value[0]] = value[1]
