@@ -11,7 +11,7 @@ def load_library(file_path = "./lib/emoticons.yml")
 
      result_hash["get_meaning"][value[1]] = key
 
-# the keys inside the 'get_meaning' hash are the Japanese emoticons and point to their meanings
+# the keys inside the 'get_emoticon' hash are the English emoticons and point to their meanings
 
      result_hash["get_emoticon"][value[0]] = value[1]
   end
