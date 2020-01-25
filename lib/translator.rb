@@ -15,7 +15,6 @@ def load_library(file_path = "./lib/emoticons.yml")
 
      result_hash["get_emoticon"][value[0]] = value[1]
   end
-  pp result_hash
   result_hash
 end
 
