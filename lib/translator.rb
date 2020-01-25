@@ -26,7 +26,7 @@ def get_japanese_emoticon(file_path = "./lib/emoticons.yml", emo = nil)
     if hash1["get_emoticon"].include?(emo)
        hash1["get_emoticon"].each do |key, value|
            if key == emo
-              value
+              return value
               pp key
               pp value           
               pp emo
