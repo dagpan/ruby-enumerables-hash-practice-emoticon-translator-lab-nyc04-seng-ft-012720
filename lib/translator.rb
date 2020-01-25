@@ -28,11 +28,12 @@ def get_japanese_emoticon(file_path = "./lib/emoticons.yml", emo = nil)
              hash1["get_meaning"].each do |key1, value1|
                  if key1 == value
                     result = value1
+                    puts result
                  end
              end
           end
        end
-       result
+#       result
     else
        puts "I'm So Sorry"
     end
