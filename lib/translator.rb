@@ -41,21 +41,11 @@ def get_english_meaning(file_path = "./lib/emoticons.yml", emo = nil)
     if hash1["get_emoticon"].include?(emo)
        hash1["get_emoticon"].each do |key, value|
            if key == emo
-             hash1["get_meaning"].each do |key1, value1|
-                 if key1 == value
-       
-                    puts result
-                 end
-             end
-
-
-              return value
-              pp key
-              pp value           
-              pp emo
-
-
-
+              hash1["get_meaning"].each do |key1, value1|
+                  if key1 == value
+                     return value1
+                  end
+              end
            end
        end
     else
