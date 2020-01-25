@@ -8,13 +8,15 @@ require "yaml"
 def load_library(file_path = "./lib/emoticons.yml")
   # code goes here
   emoticons = YAML.load_file(file_path)
-  pp emoticons
   result_hash = {"get_meaning" => {}, "get_emoticon" => {}}
   emoticons.each do |key, value|
 
 # the keys inside the 'get_meaning' hash are the Japanese emoticons and point to their meanings
 
      result_hash["get_meaning"][value[1]] = key
+
+# the keys inside the 'get_meaning' hash are the Japanese emoticons and point to their meanings
+
      result_hash["get_emoticon"][value[0]] = value[1]
   end
   pp result_hash
