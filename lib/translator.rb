@@ -32,11 +32,12 @@ def get_japanese_emoticon(file_path = "./lib/emoticons.yml", emo = nil)
              end
           end
        end
+       result
     else
        puts "I'm So Sorry"
     end
   end
-  result
+#  result
 end
 
 def get_english_meaning
